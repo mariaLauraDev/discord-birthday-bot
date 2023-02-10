@@ -1,0 +1,27 @@
+{
+  "name": "discord-birthday-bot",
+  "author": {
+    "name": "Maria Laura",
+    "email": "marialauradev@gmail.com",
+    "url": "https://github.com/mariaLauraDev"
+    },
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "A birthday bot for Discord that uses Firebase Realtime Database",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "firebase-admin": "^11.5.0",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "firebase",
+    "bot"
+  ]
+}
