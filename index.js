@@ -68,7 +68,7 @@ client.on('messageCreate', message => {
     }
 });  
 
-cron.schedule("0 30 21 * * *", () => {
+cron.schedule("0 36 21 * * *", () => {
     let today = new Date();
     let currentMonth = today.getMonth() + 1;
     let currentDay = today.getDate();
