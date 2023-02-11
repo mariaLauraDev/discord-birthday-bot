@@ -4,6 +4,9 @@ const { Client, GatewayIntentBits } = require("discord.js");
 const cron = require('node-cron');
 const  firebase = require("firebase-admin");
 
+const express = require('express');
+const app = express();
+
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -87,3 +90,8 @@ cron.schedule("0 10 12 * * *", () => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+const port = 3000;
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});
